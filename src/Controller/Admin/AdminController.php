@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Comment;
 use App\Entity\Conference;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -39,7 +40,12 @@ class AdminController extends AbstractDashboardController
     {
         return [
             MenuItem::linktoDashboard('Dashboard', 'fa fa-home'),
+
             MenuItem::linkToCrud('Conferences', 'fa fa-tags', Conference::class)
+                ->setQueryParameter('sortField', 'createdAt')
+                ->setQueryParameter('sortDirection', 'DESC'),
+
+            MenuItem::linkToCrud('Comments', 'fa fa-tags', Comment::class)
                 ->setQueryParameter('sortField', 'createdAt')
                 ->setQueryParameter('sortDirection', 'DESC'),
         ];
