@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac5800b00e7db673f8c657a49a391918",
+    "content-hash": "cd307347c751008757b55774c48befa9",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1222,16 +1222,16 @@
         },
         {
             "name": "easycorp/easyadmin-bundle",
-            "version": "v3.0.1",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EasyCorp/EasyAdminBundle.git",
-                "reference": "97ee1140ef9a92a129022d7b6bfe1171db5bc1a3"
+                "reference": "50c72b3f54584fcb0becd73ab19c85970219f8fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EasyCorp/EasyAdminBundle/zipball/97ee1140ef9a92a129022d7b6bfe1171db5bc1a3",
-                "reference": "97ee1140ef9a92a129022d7b6bfe1171db5bc1a3",
+                "url": "https://api.github.com/repos/EasyCorp/EasyAdminBundle/zipball/50c72b3f54584fcb0becd73ab19c85970219f8fe",
+                "reference": "50c72b3f54584fcb0becd73ab19c85970219f8fe",
                 "shasum": ""
             },
             "require": {
@@ -1300,7 +1300,7 @@
                 "backend",
                 "generator"
             ],
-            "time": "2020-06-23T18:56:32+00:00"
+            "time": "2020-07-13T17:48:37+00:00"
         },
         {
             "name": "laminas/laminas-code",
