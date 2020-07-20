@@ -41,6 +41,7 @@ class AdminController extends AbstractDashboardController
         return [
             MenuItem::linktoDashboard('Dashboard', 'fa fa-home'),
 
+            MenuItem::section('Content'),
             MenuItem::linkToCrud('Conferences', 'fa fa-tags', Conference::class)
                 ->setQueryParameter('sortField', 'createdAt')
                 ->setQueryParameter('sortDirection', 'DESC'),
@@ -48,6 +49,8 @@ class AdminController extends AbstractDashboardController
             MenuItem::linkToCrud('Comments', 'fa fa-tags', Comment::class)
                 ->setQueryParameter('sortField', 'createdAt')
                 ->setQueryParameter('sortDirection', 'DESC'),
+
+//            MenuItem::linkToLogout('Logout', 'fa fa-exit'),
         ];
     }
 }
