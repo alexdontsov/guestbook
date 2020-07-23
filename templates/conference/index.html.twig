@@ -7,6 +7,9 @@
     <h2>Give your feedback!</h2>
     {% for conference in conferences %}
         <h4>{{ conference.city }}</h4>
+        <p>
+            <a href="/conference/{{ conference.id }}">View</a>
+        </p>
     {% endfor %}
 </div>
 {% endblock %}
