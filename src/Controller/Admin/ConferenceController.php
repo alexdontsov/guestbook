@@ -33,7 +33,7 @@ class ConferenceController extends AbstractCrudController
             TextField::new('city'),
             TextField::new('year'),
             BooleanField::new('isInternational'),
-//            AssociationField::new('comments'),
+            AssociationField::new('comments'),
         ];
     }
 }
