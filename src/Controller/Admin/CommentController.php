@@ -32,7 +32,7 @@ class CommentController extends AbstractCrudController
             TextEditorField::new('text'),
             TextField::new('email'),
             TextField::new('photoFilename'),
-            DateField::new('createdAt'),
+//            DateField::new('createdAt'),
             AssociationField::new('conference'),
         ];
     }
