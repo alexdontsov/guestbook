@@ -133,4 +133,12 @@ class Comment
     {
         $this->createdAt = new \DateTime();
     }
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->author;
+    }
 }
