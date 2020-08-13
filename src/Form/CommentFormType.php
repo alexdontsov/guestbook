@@ -9,7 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Validator\Constraints\Image;
+//use Symfony\Component\Validator\Constraints\Image;
 
 class CommentFormType extends AbstractType
 {
@@ -24,7 +24,9 @@ class CommentFormType extends AbstractType
             ->add('photo', FileType::class, [
                 'required' => false,
                 'mapped' => false,
-                'constraints' => [new Image(['maxSize' => '1024k'])],
+//                'constraints' => [
+//                    new Image(['maxSize' => '1024k'])
+//                ],
             ])
             ->add('submit', SubmitType::class);
     }
