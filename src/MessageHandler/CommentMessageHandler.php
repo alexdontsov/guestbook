@@ -14,5 +14,4 @@ class CommentMessageHandler implements MessageHandlerInterface
     private $entityManager;
     private $commentRepository;
 
-    
 }
